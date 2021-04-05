@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_1"
+        android:enabled="true"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        />
+
+    <item
+        android:id="@+id/page_2"
+        android:enabled="true"
+        android:title="Playing"
+        android:icon="@drawable/baseline_headset_24"
+        />
+
+    <item
+        android:id="@+id/page_3"
+        android:enabled="true"
+        android:title="Playlist"
+        android:icon="@drawable/baseline_list_24"
+        />
+
+    <item
+        android:id="@+id/page_4"
+        android:enabled="true"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="Favourites"/>
+
+    <item
+        android:id="@+id/page_5"
+        android:enabled="true"
+        android:title="Downloads"
+        android:iconTintMode="add"
+        android:icon="@drawable/baseline_get_app_24"
+        />
+</menu>
