@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "344233669991",
+    "project_id": "acemusic-99739",
+    "storage_bucket": "acemusic-99739.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344233669991:android:88d76a5467957d3e3b6bc2",
+        "android_client_info": {
+          "package_name": "com.abachapp.music"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "344233669991-264g5fhvs4ucanqmt5rruhoos4fouhtu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb1aXfOgRLfVAYm1aHIhf0KMhENWZGZX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "344233669991-264g5fhvs4ucanqmt5rruhoos4fouhtu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

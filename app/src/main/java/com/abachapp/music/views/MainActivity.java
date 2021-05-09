@@ -19,6 +19,7 @@ import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.ui.PlayerNotificationManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
@@ -36,11 +37,12 @@ public class MainActivity extends AppCompatActivity {
     PendingIntent pendingIntent;
     private PlayerNotificationManager playerNotificationManager;
     private int notificationId = 1234;
+    FirebaseFirestore db ;
 
     private PlayerNotificationManager.MediaDescriptionAdapter mediaDescriptionAdapter = new PlayerNotificationManager.MediaDescriptionAdapter() {
         @Override
         public String getCurrentSubText(Player player) {
-            return artist;
+            return "Now Playing";
         }
 
         @Override
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public String getCurrentContentText(Player player) {
-            return "ContentText";
+            return artist;
         }
 
         @Override
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        db= FirebaseFirestore.getInstance();
         simpleExoPlayer = new SimpleExoPlayer.Builder(this).build();
         homefrag=new Home();
         playingfrag=new PlayingFragment();
@@ -146,7 +149,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
+        try {
+            playerNotificationManager.setPlayer(null);
+            simpleExoPlayer.release();
+        } catch (Exception ex)
+        {
+
+        }
         super.onDestroy();
-        simpleExoPlayer.release();
+
     }
+
 }

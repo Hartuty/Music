@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -29,6 +30,9 @@ android {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation platform('com.google.firebase:firebase-bom:27.1.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-firestore'
     implementation 'com.google.android.material:material:1.4.0-alpha02'
     implementation 'com.google.android.exoplayer:exoplayer-core:2.12.2'
     implementation 'com.google.android.exoplayer:exoplayer-dash:2.12.2'

@@ -5,25 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="?actionBarSize"
+    android:background="@color/black"
     tools:context=".views.Home">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/aclonica"
-        android:id="@+id/discover"
-        android:text="Discover"
-        android:textColor="@color/black"
-        android:textSize="37sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/discover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Discover"
+            android:textColor="@color/white"
+            android:textSize="37sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -44,6 +45,32 @@
                 android:layout_margin="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="6dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_play_arrow_24"
+                        android:elevation="10dp"
+                        android:backgroundTint="#1a51e8"
+                        android:id="@+id/btnplaylist1"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image1"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/playlist1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -53,7 +80,31 @@
                 android:layout_margin="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="6dp">
-
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_play_arrow_24"
+                        android:elevation="10dp"
+                        android:backgroundTint="#1a51e8"
+                        android:id="@+id/btnplaylist2"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image2"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/playlist2"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="center|bottom"/>
+                </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -62,7 +113,31 @@
                 android:layout_margin="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="6dp">
-
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_play_arrow_24"
+                        android:elevation="10dp"
+                        android:backgroundTint="#1a51e8"
+                        android:id="@+id/btnplaylist3"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image3"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/playlist3"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="center|bottom"/>
+                </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
@@ -71,27 +146,64 @@
                 android:layout_margin="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="6dp">
-
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_play_arrow_24"
+                        android:elevation="10dp"
+                        android:backgroundTint="#1a51e8"
+                        android:id="@+id/btnplaylist4"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image4"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/playlist4"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="center|bottom"/>
+                </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
 
         </LinearLayout>
     </HorizontalScrollView>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/aclonica"
-        android:text="Top Songs"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hori" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Top Songs"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hori" />
 
-    <androidx.recyclerview.widget.RecyclerView
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="172dp"
+            android:indeterminateTint="#1a51e8"
+            android:id="@+id/progressbar_home"
+            android:visibility="gone"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/recyclerview"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -102,5 +214,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="4dp"
+            android:text="Play All"
+            android:textColor="#1a51e8"
+            android:id="@+id/playallbtn"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/hori" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -10,5 +10,5 @@ public interface MusicInterface {
 
     @GET("tracks")
     Call<MusicModel> gethomepage(@Query("client_id") String clientid,@Query("limit") String limit,
-                                 @Query("format") String format, @Query("boost") String boost);
+                                 @Query("format") String format);
 }
